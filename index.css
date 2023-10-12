@@ -1,6 +1,123 @@
-button{
-    background-color: purple;
-    font-size: 1.2em;
-    padding: 12px 12px;
-    margin: 50vh 90vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: greenyellow;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li{
+    list-style: none;
+    text-transform: capitalize;
+    margin-right: 15px;
+    font-size: 2em;
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: darkcyan;
+}
+header nav ul li a:hover{
+    background-color: rgb(132, 209, 9);
+    transition: 2s ease;
+    border: 1px solid cadetblue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.p-element{
+    text-transform: capitalize;
+    font-size: 5em;
+    margin-top: 60px;
+    
+}
+.p-element1{
+    text-transform: capitalize;
+    font-size: 1em;
+}
+.img{
+    width: 400px;
+    height: 500px;
+}
+.text{
+    margin-left: 20px;
+    width: 400px;
+}
+.btn{
+    margin-top: 10px;
+    font-size: 1.6em;
+    border-radius: 5px 5px ;
+    border: 1px solid lightseagreen;
+    padding: 5px;
+}
+.btn:hover{
+    margin-top: 10px;
+    font-size: 1.6em;
+    border-radius: 5px 5px ;
+    background-color: lightseagreen;
+    padding: 5px;
+    cursor: pointer;
+}
+span{
+    font-size: 1.4em;
+}
+.bottom-p i:hover{
+    color: green;
+}
+.bottom-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+footer{
+    margin-top: 20px;
+    width: 100%;
+}
+footer div p{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+}
+footer div p span{
+    font-size: 16px;
+    color: white;
+}
+@media (max-width: 828px) {
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    .image-container{
+        width: fit-content;
+    }
+
+}
+@media (max-width: 724px) {
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    .image-container{
+        width: fit-content;
+    }
+    .text{
+        width: 200px;
+    }
+    .p-element{
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 1em;
+    }
+}
+@media (max-width: 414px) {
+    .img{
+        width: 160px;
+        height: 160px;
+    }
 }
